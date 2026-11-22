@@ -1,0 +1,36 @@
+make: Entering directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day50_round_robin_arbiter'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day50_round_robin_arbiter'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.011 s (elab=0.000, cvt=0.000, bld=0.010); cpu 0.001 s on 1 threads; allocated 8.770 MB
+  all four requesting -> grant rotates:
+    grant = 0001
+    grant = 0010
+    grant = 0100
+    grant = 1000
+    grant = 0001
+    grant = 0010
+    grant = 0100
+    grant = 1000
+    grant = 0001
+    grant = 0010
+    grant = 0100
+    grant = 1000
+    req=0101 grant = 0001
+    req=0101 grant = 0100
+    req=0101 grant = 0001
+    req=0101 grant = 0100
+    req=0101 grant = 0001
+    req=0101 grant = 0100
+    req=0101 grant = 0001
+    req=0101 grant = 0100
+  requester 0 granted 494 times
+  requester 1 granted 453 times
+  requester 2 granted 467 times
+  requester 3 granted 475 times
+[PASS] day50_round_robin_arbiter
+- tb/day50_round_robin_arbiter_tb.sv:52: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 20ns; walltime 0.002 s; speed 10.683 us/s
+- Verilator: cpu 0.002 s on 1 threads; allocated 4 MB

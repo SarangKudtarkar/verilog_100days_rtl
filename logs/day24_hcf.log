@@ -1,0 +1,61 @@
+make: Entering directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day24_hcf'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day24_hcf'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.009 s (elab=0.000, cvt=0.000, bld=0.009); cpu 0.001 s on 1 threads; allocated 8.641 MB
+  HCF( 48, 18) =   6
+  HCF( 17,  5) =   1
+  HCF(100, 75) =  25
+  HCF(255,  1) =   1
+  HCF(  0,  9) =   9
+  HCF(  7,  0) =   7
+  HCF(  0,  0) =   0
+  HCF( 64, 16) =  16
+  HCF( 36, 36) =  36
+  HCF(252,105) =  21
+  HCF( 89, 80) =   1
+  HCF( 45,119) =   1
+  HCF(  8,243) =   1
+  HCF(160,244) =   4
+  HCF( 87,255) =   3
+  HCF( 61, 77) =   1
+  HCF(192,223) =   1
+  HCF(218, 65) =   1
+  HCF(209,188) =   1
+  HCF(202, 21) =   1
+  HCF(136,206) =   2
+  HCF( 10, 83) =   1
+  HCF(211,157) =   1
+  HCF(148,108) =   4
+  HCF( 95, 34) =   1
+  HCF(221,130) =  13
+  HCF(105, 28) =   7
+  HCF(251,152) =   1
+  HCF(108,153) =   9
+  HCF(108, 35) =   1
+  HCF(104,110) =   2
+  HCF(255, 44) =   1
+  HCF( 28,124) =   4
+  HCF( 51,208) =   1
+  HCF(234,132) =   6
+  HCF(159,222) =   3
+  HCF(203,152) =   1
+  HCF( 25, 14) =   1
+  HCF(  8, 56) =   8
+  HCF( 17,135) =   1
+  HCF(  5,195) =   5
+  HCF( 44,110) =  22
+  HCF(239, 48) =   1
+  HCF(112, 78) =   2
+  HCF(145,223) =   1
+  HCF(125,113) =   1
+  HCF(254,211) =   1
+  HCF(205,219) =   1
+  HCF(212,220) =   4
+  HCF( 47,153) =   1
+[PASS] day24_hcf
+- tb/day24_hcf_tb.sv:41: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 11ns; walltime 0.001 s; speed 8.953 us/s
+- Verilator: cpu 0.001 s on 1 threads; allocated 4 MB

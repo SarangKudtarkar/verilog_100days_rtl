@@ -1,0 +1,28 @@
+make: Entering directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day01_clk_div_even'
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/local/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/local/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/local/share/verilator/include/verilated_threads.cpp
+python3 /usr/local/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vday01_clk_div_even_tb.cpp Vday01_clk_div_even_tb___024root__0.cpp Vday01_clk_div_even_tb__main.cpp Vday01_clk_div_even_tb___024root__Slow.cpp Vday01_clk_div_even_tb___024root__0__Slow.cpp Vday01_clk_div_even_tb__Syms__Slow.cpp > Vday01_clk_div_even_tb__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vday01_clk_div_even_tb__ALL.o Vday01_clk_div_even_tb__ALL.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vday01_clk_div_even_tb__ALL.a    -pthread -lpthread -latomic   -o sim
+rm Vday01_clk_div_even_tb__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day01_clk_div_even'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.046 MB sources in 3 modules, into 0.052 MB in 6 C++ files needing 0.000 MB
+- Verilator: Walltime 15.200 s (elab=0.001, cvt=0.064, bld=14.998); cpu 0.076 s on 1 threads; allocated 18.988 MB
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+  clk_out period = 60 (expected 60)
+[PASS] day01_clk_div_even
+- tb/day01_clk_div_even_tb.sv:32: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 745ps; walltime 0.000 s; speed 3.955 us/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 4 MB

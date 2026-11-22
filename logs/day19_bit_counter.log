@@ -1,0 +1,23 @@
+make: Entering directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day19_bit_counter'
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/local/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/local/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/local/share/verilator/include/verilated_threads.cpp
+python3 /usr/local/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vday19_bit_counter_tb.cpp Vday19_bit_counter_tb___024root__0.cpp Vday19_bit_counter_tb__main.cpp Vday19_bit_counter_tb___024root__Slow.cpp Vday19_bit_counter_tb___024root__0__Slow.cpp Vday19_bit_counter_tb__Syms__Slow.cpp > Vday19_bit_counter_tb__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vday19_bit_counter_tb__ALL.o Vday19_bit_counter_tb__ALL.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vday19_bit_counter_tb__ALL.a    -pthread -lpthread -latomic   -o sim
+rm Vday19_bit_counter_tb__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day19_bit_counter'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.045 MB sources in 3 modules, into 0.048 MB in 6 C++ files needing 0.000 MB
+- Verilator: Walltime 11.447 s (elab=0.001, cvt=0.007, bld=11.433); cpu 0.014 s on 1 threads; allocated 19.363 MB
+  data=00000000 ones=0 zeros=8
+  data=00101011 ones=4 zeros=4
+  data=01010110 ones=4 zeros=4
+  data=10000001 ones=2 zeros=6
+  data=10101100 ones=4 zeros=4
+  data=11010111 ones=6 zeros=2
+[PASS] day19_bit_counter
+- tb/day19_bit_counter_tb.sv:23: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 3ns; walltime 0.000 s; speed 7.221 us/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 4 MB

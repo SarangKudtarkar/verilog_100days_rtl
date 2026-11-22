@@ -1,0 +1,26 @@
+make: Entering directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day05_rca_4bit'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/sarang/sv_examples/verilog_100days_rtl/build/day05_rca_4bit'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.000, cvt=0.000, bld=0.009); cpu 0.001 s on 1 threads; allocated 8.910 MB
+Console results (every 37th vector):
+   0 +  0 + 0 =  0  (cout=0)
+   2 +  5 + 0 =  7  (cout=0)
+   4 + 10 + 0 = 14  (cout=0)
+   6 + 15 + 0 =  5  (cout=1)
+   9 +  4 + 0 = 13  (cout=0)
+  11 +  9 + 0 =  4  (cout=1)
+  13 + 14 + 0 = 11  (cout=1)
+   0 +  3 + 1 =  4  (cout=0)
+   2 +  8 + 1 = 11  (cout=0)
+   4 + 13 + 1 =  2  (cout=1)
+   7 +  2 + 1 = 10  (cout=0)
+   9 +  7 + 1 =  1  (cout=1)
+  11 + 12 + 1 =  8  (cout=1)
+  14 +  1 + 1 =  0  (cout=1)
+[PASS] day05_rca_4bit
+- tb/day05_rca_4bit_tb.sv:23: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 5ns; walltime 0.001 s; speed 8.561 us/s
+- Verilator: cpu 0.001 s on 1 threads; allocated 4 MB
